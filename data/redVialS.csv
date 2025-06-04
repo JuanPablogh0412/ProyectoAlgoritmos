@@ -1,0 +1,8 @@
+node_id,latitude,longitude
+1,4.6021,-74.0652
+2,4.6050,-74.0678
+3,4.6083,-74.0631
+edge_id,start_node_id,end_node_id
+A,1,2
+B,2,3
+C,3,1

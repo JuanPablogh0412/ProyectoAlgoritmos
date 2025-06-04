@@ -1,0 +1,68 @@
+.control-panel {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.file-input {
+    margin: 5px 0;
+    padding: 8px;
+    width: 250px;
+}
+
+.algorithm-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.algo-btn {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.algo-btn:hover {
+    background: #45a049;
+}
+
+#results {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f8f9fa;
+}
+
+.download-btn {
+    padding: 10px 25px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.route-marker {
+    cursor: pointer;
+}

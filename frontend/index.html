@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TSP Project</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-color-markers/1.0.2/leaflet-color-markers.css" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+</head>
+<body>
+    <div id="map" style="height: 600px; width: 100%;"></div>
+    <input type="file" id="roadNetworkFile" accept=".csv">
+    <br>
+    <input type="file" id="pointsetFile" accept=".csv" style="margin-top: 10px;">
+    <div class="button-group" style="margin: 10px 0;">
+        <button id="runBruteForce" class="algo-btn">Ejecutar Fuerza Bruta</button>
+        <button id="runNearest" class="algo-btn"> Ejecutar Algoritmo Nearest Neighbor</button>
+        <button id="runGenetic" class="algo-btn">Ejecutar Algoritmo Genético</button>
+    </div>
+
+    <div id="results" style="margin-top: 20px;">
+    <h3>Resultados</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Algoritmo</th>
+                <th>Distancia (km)</th>
+                <th>Tiempo (ms)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="resultsBody"></tbody>
+    </table>
+</div>
+
+    <button id="downloadResults" style="margin-top: 10px;">Descargar Resultados</button>
+
+    
+    <script src="script.js"></script> 
+
+</body>
+</html>
